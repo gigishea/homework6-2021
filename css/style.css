@@ -126,41 +126,38 @@
       background-image: none;
       background-color: #f1f1f1;
       font-family: serif;
+      
+    }
+    .card{
+      display: flex;
+      border: solid #45ADDD 2px;
+      background-color: #45ADDD;
+      flex-basis: 250px;
+      flex-wrap: nowrap;
     }
   
     .nav_links{
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      column-gap: 175px;
+      column-gap: 150px;
       
     }
   
     .pricing{
       display: flex;
       flex-direction: row;
+      flex-wrap: nowrap;
       align-items: flex-end;
-      flex-wrap: nowrap;
-    }
-
-    .card{
-      display: flex;
-      border: 2px solid #45ADDD;
-      flex-basis: 250px;
-      flex-wrap: nowrap;
     }
   
     .gallery, #gallery{
       display: none;
     }
-  
-    
-  
-    .card ul li:nth-child(even)::after {
+   .card ul li:nth-child(even)::after {
       content: "\1F44D";
     }
-  
-    .card ul li:nth-child(odd)::before {
+   .card ul li:nth-child(odd)::before {
       content: "\1F44D";
     }
   }
